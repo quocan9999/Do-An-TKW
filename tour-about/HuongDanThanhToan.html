@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css" />
+
+        <title>Hướng Dẫn Thanh Toán</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #fafafa;
+            }
+            h1 {
+                text-align: center;
+                color: #cc1f1f;
+                margin-bottom: 50px;
+            }
+            .section {
+                background-color: #fff;
+                padding: 20px 30px;
+                border-left: 4px solid #cc1f1f;
+                border-radius: 5px;
+                margin: 0 auto 30px;
+                max-width: 960px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            }
+            .section h2 {
+                color: #3419ad;
+                margin-bottom: 10px;
+            }
+            .section ul {
+                padding-left: 20px;
+            }
+            .bank-info {
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid #ccc;
+            }
+            .logos img {
+                height: 50px;
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Vị trí header -->
+        <header id="header-placeholder" class="header"></header>
+
+        <h1 class="mt-3">Hướng Dẫn Thanh Toán</h1>
+
+        <div class="section">
+            <h2>Thanh toán tại địa chỉ khách hàng</h2>
+            <p>
+                Trong thời gian từ thứ 2–7 (ngày làm việc), nhân viên công ty sẽ
+                đến tận nơi địa chỉ của quý khách để giao phiếu thu hoặc xác
+                nhận của công ty và thu tiền khi quý khách yêu cầu đặt dịch vụ.
+            </p>
+            <ul>
+                <li>Miễn phí đối với booking &gt; 5 triệu</li>
+                <li>Phụ thu 50.000đ với booking &lt; 5 triệu</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Thanh toán tại văn phòng</h2>
+            <p><strong>Văn phòng tại TTP.HCM:</strong></p>
+            <ul>
+                <li>
+                    Địa chỉ: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TP.Hồ Chí
+                    Minh
+                </li>
+                <li>Điện thoại: (+8424) 3717 1818 – 3716 6556</li>
+            </ul>
+            <p><strong>Văn phòng tại Hà Nội :</strong></p>
+            <ul>
+                <li>Địa chỉ: 93 Hồng Hà, Ba Đình, Hà Nội</li>
+                <li>Điện thoại: (028) 62955333 – 62977333</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Thanh toán qua chuyển khoản</h2>
+            <p>
+                Quý khách có thể thanh toán cho chúng tôi bằng cách chuyển khoản
+                tại ngân hàng, qua thẻ ATM, hoặc Internet Banking:
+            </p>
+
+            <div class="bank-info">
+                <strong>Tên TK:</strong> Công Ty Cổ Phần Lữ Hành Việt – Du Lịch
+                Việt<br />
+                <strong>Số TK:</strong> 03601013004581<br />
+                <strong>Ngân hàng:</strong> TMCP Hàng Hải Việt Nam <br />
+            </div>
+
+            <div class="bank-info">
+                <strong>Tên TK:</strong> Công Ty Cổ Phần Đầu Tư – Vận Tải – Du
+                Lịch Hoàng Việt<br />
+                <strong>Số TK:</strong> 60681368<br />
+                <strong>Ngân hàng:</strong> VPBank<br />
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Thanh toán bằng thẻ Visa, MasterCard</h2>
+            <p>Chúng tôi chấp nhận các loại thẻ:</p>
+            <div class="logos">
+                <img src="/assets/PhuongThao/the.png" />
+            </div>
+        </div>
+        <!-- Icon Contact -->
+        <div id="iconContact" class="icon-contact">
+            <img src="/assets/icon/icon_contact.png" alt="Icon Contact" />
+        </div>
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+        <!-- Form Contact -->
+        <div id="formContact" class="form-contact">
+            <div class="card text-center pb-2 pt-2" style="width: 25rem">
+                <div class="card-title">
+                    <h5>Để lại lời nhắn cho chúng tôi</h5>
+                </div>
+                <div class="card-text">
+                    <input
+                        type="tel"
+                        placeholder="Số điện thoại của bạn"
+                        class="form-control p-1 w-75 mx-auto"
+                    />
+                    <select
+                        name="Khởi hành"
+                        id="khoiHanh"
+                        class="form-select w-75 mx-auto mt-3"
+                    >
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hạ Long">Hạ Long</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Tour Combo">Tour Combo</option>
+                    </select>
+                    <textarea
+                        placeholder="Nhập địa điểm tour cần tư vấn"
+                        class="form-control p-1 w-75 mx-auto mt-3 mb-3"
+                        rows="3"
+                    ></textarea>
+                    <button id="sendContactButton" class="btn btn-primary mb-2">
+                        GỬI ĐI
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Vị trí Footer-Destinations -->
+        <footer id="footer-destinations-placeholder"></footer>
+        <!-- Vị trí Footer-Service -->
+        <footer id="footer-service-placeholder"></footer>
+        <!-- Vị trí Footer-Contacts -->
+        <footer id="footer-contacts-placeholder"></footer>
+
+        <!-- Script nạp Header -->
+        <script>
+            fetch("/components/header.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById("header-placeholder").innerHTML =
+                        data;
+                    document.dispatchEvent(new Event("headerLoaded"));
+                });
+        </script>
+
+        <!-- Script nạp Footer-Destinations -->
+        <script>
+            fetch("/components/footer-destinations.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById(
+                        "footer-destinations-placeholder"
+                    ).innerHTML = data;
+                });
+        </script>
+
+        <!-- Script nạp Footer-Service -->
+        <script>
+            fetch("/components/footer-service.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById(
+                        "footer-service-placeholder"
+                    ).innerHTML = data;
+                    document.dispatchEvent(new Event("footerLoaded"));
+                });
+        </script>
+
+        <!-- Script nạp Footer-Contacts -->
+        <script>
+            fetch("/components/footer-contacts.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById(
+                        "footer-contacts-placeholder"
+                    ).innerHTML = data;
+                });
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/footer.js"></script>
+        <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

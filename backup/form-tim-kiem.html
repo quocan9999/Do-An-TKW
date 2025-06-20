@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Form tìm kiếm overlay -->
+    <section class="search-overlay position-absolute bottom-0 start-50 translate-middle-x w-100 pb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow-lg border-0"
+                        style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);">
+                        <div class="card-body p-4">
+                            <h3 class="text-center mb-4 text-primary">
+                                <i class="bi bi-search"></i>
+                                Tìm kiếm tour du lịch
+                            </h3>
+                            <form id="searchTourForm" class="row g-3">
+                                <div class="col-md-3">
+                                    <label for="destination" class="form-label fw-bold">
+                                        <i class="bi bi-geo-alt text-primary"></i>
+                                        Điểm đến
+                                    </label>
+                                    <select class="form-select" id="destination" name="destination" required>
+                                        <option value="">
+                                            Chọn điểm đến
+                                        </option>
+                                        <option value="hanoi">
+                                            Hà Nội
+                                        </option>
+                                        <option value="halong">
+                                            Hạ Long
+                                        </option>
+                                        <option value="danang">
+                                            Đà Nẵng
+                                        </option>
+                                        <option value="hoian">
+                                            Hội An
+                                        </option>
+                                        <option value="nhatrang">
+                                            Nha Trang
+                                        </option>
+                                        <option value="dalat">
+                                            Đà Lạt
+                                        </option>
+                                        <option value="phuquoc">
+                                            Phú Quốc
+                                        </option>
+                                        <option value="vungtau">
+                                            Vũng Tàu
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="departureDate" class="form-label fw-bold">
+                                        <i class="bi bi-calendar text-primary"></i>
+                                        Ngày khởi hành
+                                    </label>
+                                    <input type="date" class="form-control" id="departureDate" name="departureDate"
+                                        min="" required />
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="duration" class="form-label fw-bold">
+                                        <i class="bi bi-clock text-primary"></i>
+                                        Số ngày
+                                    </label>
+                                    <select class="form-select" id="duration" name="duration">
+                                        <option value="">Chọn</option>
+                                        <option value="1">1 ngày</option>
+                                        <option value="2">2 ngày</option>
+                                        <option value="3">3 ngày</option>
+                                        <option value="4">4 ngày</option>
+                                        <option value="5">5 ngày</option>
+                                        <option value="7">7 ngày</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="guests" class="form-label fw-bold">
+                                        <i class="bi bi-people text-primary"></i>
+                                        Số người
+                                    </label>
+                                    <input type="number" class="form-control" id="guests" name="guests" min="1" max="20"
+                                        value="2" required />
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">&nbsp;</label>
+                                    <button type="submit" class="btn btn-primary w-100 d-block btn-lg">
+                                        <i class="bi bi-search"></i>
+                                        Tìm kiếm
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

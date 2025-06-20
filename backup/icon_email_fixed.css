@@ -1,0 +1,56 @@
+/* ICON EMAIL FIXED */
+#floating-button {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    background-color: #ffd700;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form popup ẩn ban đầu */
+#contact-form {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+}
+
+/* Style input */
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button gửi */
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* END ICON EMAIL FIXED */

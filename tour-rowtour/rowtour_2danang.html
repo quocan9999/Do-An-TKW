@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tour Đà Nẵng</title>
+
+        <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/style_ChauKiet.css" />
+    </head>
+    <body>
+        <!-- Vị trí header -->
+        <header id="header-placeholder" class="header"></header>
+        <div class="container-fluid bg-secondary py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto">
+                        <a
+                            href="/index.html"
+                            class="text-white text-decoration-none"
+                            >Trang chủ</a
+                        >
+                    </div>
+                    <div class="col-auto text-white">/</div>
+                    <div class="col-auto">
+                        <a
+                            href="/tour-rowtour/rowtour_2danang.html"
+                            class="text-white text-decoration-none"
+                            >Đà Nẵng</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-2 mb-2">
+            <div class="row">
+                <!-- Tiêu đề bên trái -->
+                <div class="col-sm-5">
+                    <h1 class="m-0">Đà Nẵng</h1>
+                </div>
+
+                <!-- Sắp xếp bên phải -->
+                <!-- <div class="col-sm-7 text-end">
+                    <div class="pt-2">
+                        <strong>Sắp xếp theo</strong> |
+                        <span onclick="sapXepGia(false)" data-sort="2"
+                            >Giá giảm dần</span
+                        >
+                        |
+                        <span onclick="sapXepGia(true)" data-sort="3"
+                            >Giá tăng dần</span
+                        >
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <h1 class="text-center my-4 text-primary">Danh sách Tour Đà Nẵng</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="border shadow-sm">
+                        <div class="bg-light p-2">
+                            <strong>TÌM TOURS</strong>
+                        </div>
+                        <div class="p-3">
+                            <strong>Điểm khởi hành</strong>
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    onchange="chuyenTrangTheoThanhPho(this)"
+                                    data-city="hanoi"
+                                />
+                                <label class="form-check-label">Hà Nội</label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    onchange="chuyenTrangTheoThanhPho(this)"
+                                    data-city="danang"
+                                />
+                                <label class="form-check-label">Đà Nẵng</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    onchange="chuyenTrangTheoThanhPho(this)"
+                                    data-city="halong"
+                                />
+                                <label class="form-check-label">Hạ Long</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    onchange="chuyenTrangTheoThanhPho(this)"
+                                    data-city="combo"
+                                />
+                                <label class="form-check-label"
+                                    >Du Lịch Combo</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="selectCity" class="form-label"
+                                >Khởi hành từ</label
+                            >
+                            <select id="selectCity" class="form-select">
+                                <option value="">
+                                    -- Chọn điểm khởi hành --
+                                </option>
+                                <option value="hanoi">Hà Nội</option>
+                                <option value="danang">Đà Nẵng</option>
+                                <option value="hcm">Hồ Chí Minh</option>
+                                <option value="cantho">Cần Thơ</option>
+                                <option value="haiphong">Hải Phòng</option>
+                                <option value="hue">Huế</option>
+                                <option value="vinh">Vinh</option>
+                                <option value="thanhhoa">Thanh Hóa</option>
+                                <option value="bmt">Buôn Mê Thuột</option>
+                                <option value="nhatrang">Nha Trang</option>
+                                <option value="dalat">Đà Lạt</option>
+                                <option value="quynhon">Quy Nhơn</option>
+                                <option value="rachgia">Rạch Giá</option>
+                                <option value="combo">
+                                    Gói combo mà khách chọn
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label for="selectTime" class="form-label"
+                                >Thời gian</label
+                            >
+                            <select id="selectTime" class="form-select">
+                                <option value="">-- Chọn thời gian --</option>
+                                <option value="1n">1 ngày</option>
+                                <option value="2n1d">2 ngày 1 đêm</option>
+                                <option value="3n2d">3 ngày 2 đêm</option>
+                                <option value="4n3d">4 ngày 3 đêm</option>
+                                <option value="5n4d">5 ngày 4 đêm</option>
+                                <option value="6n5d">6 ngày 5 đêm</option>
+                                <option value="7n6d">7 ngày 6 đêm</option>
+                                <option value="8n7d">8 ngày 7 đêm</option>
+                                <option value="9n8d">9 ngày 8 đêm</option>
+                                <option value="10n9d">10 ngày 9 đêm</option>
+                                <option value="11n10d">11 ngày 10 đêm</option>
+                                <option value="12n11d">12 ngày 11 đêm</option>
+                                <option value="13n12d">13 ngày 12 đêm</option>
+                                <option value="14n13d">14 ngày 13 đêm</option>
+                                <option value="15n14d">15 ngày 14 đêm</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label for="minPrice" class="form-label"
+                                >Giá từ (VNĐ)</label
+                            >
+                            <input
+                                type="number"
+                                id="minPrice"
+                                class="form-control"
+                                placeholder="0"
+                            />
+
+                            <label for="maxPrice" class="form-label mt-2"
+                                >Đến (VNĐ)</label
+                            >
+                            <input
+                                type="number"
+                                id="maxPrice"
+                                class="form-control"
+                                placeholder="50000000"
+                            />
+
+                            <button
+                                id="locgia"
+                                onclick="locGia()"
+                                class="btn btn-primary mt-2 w-100"
+                            >
+                                Lọc giá
+                            </button>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <button
+                                class="btn btn-danger w-100"
+                                onclick="locTour()"
+                            >
+                                <i class="fas fa-filter"></i> Lọc
+                            </button>
+                        </div>
+
+                        <div class="col-auto">
+                            <div class="bg-light p-4 rounded shadow-sm my-4">
+                                <h2 class="text-primary mb-3">
+                                    <em><strong>Du Lịch Đà Nẵng</strong></em>
+                                </h2>
+                                <p>
+                                    sẽ đưa quý khách đến với thành phố biển. Bên
+                                    cạnh đó, khi tham gia
+                                    <strong><em>tour Đà Nẵng</em></strong> bạn
+                                    sẽ được thăm quan những
+                                    <a href="#"
+                                        ><strong
+                                            >danh lam thắng cảnh nổi tiếng của
+                                            Đà Nẵng</strong
+                                        ></a
+                                    >
+                                </p>
+                                <p>
+                                    Tham quan các địa danh nổi bật như:
+                                    <em
+                                        >Bà Nà Hill, Bán đảo Sơn Trà, Ngũ Hành
+                                        Sươn, phố cổ Hội An,...</em
+                                    >
+                                </p>
+                                <p>
+                                    Đây là
+                                    <a href="#"
+                                        ><strong
+                                            >những điểm tham quan nổi tiếng của
+                                            Đà Nẵng</strong
+                                        ></a
+                                    >
+                                    nên ghé thăm khi đi
+                                    <strong><em>tour Đà Nẵng</em></strong
+                                    >.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-12">
+                            <select
+                                id="cachDuyet"
+                                class="form-select w-50 mx-auto mb-3"
+                            >
+                                <option value="foreach">
+                                    Duyệt bằng forEach
+                                </option>
+                                <option value="while">Duyệt bằng while</option>
+                            </select>
+                            <div class="text-center mb-4">
+                                <button
+                                    onclick="showTourNames()"
+                                    class="btn btn-info"
+                                >
+                                    Hiển thị danh sách tour
+                                </button>
+                            </div>
+                        </div> -->
+
+                        <div id="tourList">
+                            <div class="row text-center">
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="card highlight-card h-100 d-flex flex-column"
+                                        data-khoihanh="hanoi"
+                                        data-thoigian="4n3d"
+                                        data-price="6550000"
+                                    >
+                                        <div
+                                            class="card-body flex-grow-1 d-flex flex-column justify-content-between"
+                                        >
+                                            <div>
+                                                <h3 class="card-title fw-bold">
+                                                    Từ Hà Nội - Đà Nẵng - Sơn
+                                                    Trà - Bà Nà - Phố cổ Hội An
+                                                    <img
+                                                        src="/assets/icon/icon.gif"
+                                                        onmouseover="bigImg(this)"
+                                                        onmouseout="normalImg(this)"
+                                                        style="float: right"
+                                                    />
+                                                </h3>
+                                                <div class="text-center">
+                                                    <img
+                                                        src="/assets/img_ChauKiet/danang/anh1.jpg"
+                                                        class="img-fluid tour-img"
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div class="card-substitle">
+                                                <p>
+                                                    <strong>Khởi hành: </strong>
+                                                    Hà Nội
+                                                </p>
+                                                <p>
+                                                    <strong>Điểm đến: </strong>
+                                                    <a href="#"> Việt Nam</a>
+                                                </p>
+                                                <p>
+                                                    <strong>Thời gian: </strong>
+                                                    4 Ngày 3 Đêm
+                                                </p>
+                                                <p>
+                                                    <strong>Ngày đi: </strong>
+                                                    05, 12, 26/06; 08, 28/07;
+                                                    20, 25/8; 21/09/2025
+                                                </p>
+                                            </div>
+
+                                            <div class="card-text">
+                                                <ul>
+                                                    Điểm nổi bật
+                                                    <li class="text-danger">
+                                                        Tặng mũ du lịch cao cấp
+                                                    </li>
+                                                    <li class="text-danger">
+                                                        Bay khứ hồi VietNam
+                                                        Airlines gồm 10kg xách
+                                                        tay + 23kg ký gửi
+                                                    </li>
+                                                    <li class="text-danger">
+                                                        Lưu trú khách sạn 4*
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer mt-auto">
+                                            <p>Giá 1 khách</p>
+                                            <p>8090000đ -19%</p>
+                                            <p>Giá: <span>6550000đ</span></p>
+                                            <div>
+                                                <a
+                                                    href="/tour-details/tourdnso1.html"
+                                                    class="btn btn-outline-primary btn-sm"
+                                                    >Chi tiết</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="card highlight-card h-100 d-flex flex-column"
+                                        data-khoihanh="hanoi"
+                                        data-thoigian="4n3d"
+                                        data-price="7550000"
+                                    >
+                                        <div
+                                            class="card-body flex-grow-1 d-flex flex-column justify-content-between"
+                                        >
+                                            <div>
+                                                <h3 class="card-title fw-bold">
+                                                    Du lịch Hà Nội - Huế - Đà
+                                                    Nẵng - Bà Nà - Hội An
+                                                    <img
+                                                        src="/assets/icon/icon.gif"
+                                                        onmouseover="bigImg(this)"
+                                                        onmouseout="normalImg(this)"
+                                                        style="float: right"
+                                                    />
+                                                </h3>
+
+                                                <img
+                                                    src="/assets/img_ChauKiet/danang/anh2.jpg"
+                                                    class="img-fluid tour-img"
+                                                />
+                                            </div>
+
+                                            <div class="card-substitle">
+                                                <p>
+                                                    <strong>Khởi hành: </strong>
+                                                    Hà Nội
+                                                </p>
+                                                <p>
+                                                    <strong>Điểm đến: </strong>
+                                                    <a href="#">
+                                                        Du lịch Miền Trung</a
+                                                    >
+                                                </p>
+                                                <p>
+                                                    <strong>Thời gian: </strong>
+                                                    4 Ngày 3 Đêm
+                                                </p>
+                                                <p>
+                                                    <strong>Ngày đi: </strong>
+                                                    23/06, 07,15/07, 11,12/08;
+                                                    23/9/2025
+                                                </p>
+                                            </div>
+
+                                            <div class="card-text">
+                                                <ul>
+                                                    Điểm nổi bật
+                                                    <li class="text-danger">
+                                                        Tour trọn gói đã bao gồm
+                                                        vé máy bay
+                                                    </li>
+                                                    <li class="text-danger">
+                                                        Khám phá hành trình di
+                                                        sản Huế - Đà Nẵng - Hội
+                                                        An
+                                                    </li>
+                                                    <li class="text-danger">
+                                                        Hướng dẫn viên kinh
+                                                        nghiệm, theo đoàn suốt
+                                                        tuyến
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer mt-auto">
+                                            <p>Giá 1 khách</p>
+                                            <p>9090000đ -17%</p>
+                                            <p>Giá: <span>7550000đ</span></p>
+                                            <a
+                                                href="/tour-details/tourdnso2.html"
+                                                class="btn btn-outline-primary btn-sm"
+                                                >Chi tiết</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="card highlight-card h-100 d-flex flex-column"
+                                        data-khoihanh="hanoi"
+                                        data-thoigian="4n3d"
+                                        data-price="6190000"
+                                    >
+                                        <div
+                                            class="card-body flex-grow-1 d-flex flex-column justify-content-between"
+                                        >
+                                            <div>
+                                                <h3 class="card-title fw-bold">
+                                                    Từ Đà Nẵng - Sơn Trà - Bà Nà
+                                                    - Phố Cổ Hội An Bay VJ
+                                                    <img
+                                                        src="/assets/icon/icon.gif"
+                                                        onmouseover="bigImg(this)"
+                                                        onmouseout="normalImg(this)"
+                                                        style="float: right"
+                                                    />
+                                                </h3>
+
+                                                <img
+                                                    src="/assets/img_ChauKiet/danang/anh3.jpg"
+                                                    class="img-fluid tour-img"
+                                                />
+                                            </div>
+
+                                            <div class="card-substitle">
+                                                <p>
+                                                    <strong>Khởi hành: </strong>
+                                                    Hà Nội
+                                                </p>
+                                                <p>
+                                                    <strong>Điểm đến: </strong>
+                                                    <a href="#"> Việt Nam</a>
+                                                </p>
+                                                <p>
+                                                    <strong>Thời gian: </strong>
+                                                    4 ngày 3 đêm
+                                                </p>
+                                                <p>
+                                                    <strong>Ngày đi: </strong>
+                                                    29/05; 05/06; 12/06; 19/06;
+                                                    26/06; 03/07; 10/07; ...
+                                                </p>
+                                            </div>
+
+                                            <div class="card-text">
+                                                <ul>
+                                                    Điểm nổi bật
+                                                    <li class="text-danger">
+                                                        Khám phá " Bà Nà Hills"
+                                                        - Làng Pháp giữa lòng Đà
+                                                        Nẵng
+                                                    </li>
+                                                    <li class="text-danger">
+                                                        Tham quan bách bộ " Hội
+                                                        An" nơi giao thoa nhiều
+                                                        nền văn hoá khác nhau
+                                                    </li>
+                                                    <li class="text-danger">
+                                                        Lưu trú khách sạn 3 sao
+                                                        sang trọng, hiện đại
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer mt-auto">
+                                            <p>Giá 1 khách</p>
+                                            <p>Giá: <span>6190000đ</span></p>
+                                            <a
+                                                href="#"
+                                                class="btn btn-outline-primary btn-sm"
+                                                >Chi tiết</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Icon Contact -->
+        <div id="iconContact" class="icon-contact">
+            <img src="/assets/icon/icon_contact.png" alt="Icon Contact" />
+        </div>
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+        <!-- Form Contact -->
+        <div id="formContact" class="form-contact">
+            <div class="card text-center pb-2 pt-2" style="width: 25rem">
+                <div class="card-title">
+                    <h5>Để lại lời nhắn cho chúng tôi</h5>
+                </div>
+                <div class="card-text">
+                    <input
+                        type="tel"
+                        placeholder="Số điện thoại của bạn"
+                        class="form-control p-1 w-75 mx-auto"
+                    />
+                    <select
+                        name="Khởi hành"
+                        id="khoiHanh"
+                        class="form-select w-75 mx-auto mt-3"
+                    >
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hạ Long">Hạ Long</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Tour Combo">Tour Combo</option>
+                    </select>
+                    <textarea
+                        placeholder="Nhập địa điểm tour cần tư vấn"
+                        class="form-control p-1 w-75 mx-auto mt-3 mb-3"
+                        rows="3"
+                    ></textarea>
+                    <button id="sendContactButton" class="btn btn-primary mb-2">
+                        GỬI ĐI
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Vị trí Footer-Destinations -->
+        <footer id="footer-destinations-placeholder"></footer>
+        <!-- Vị trí Footer-Service -->
+        <footer id="footer-service-placeholder"></footer>
+        <!-- Vị trí Footer-Contacts -->
+        <footer id="footer-contacts-placeholder"></footer>
+
+        <!-- Script nạp Header -->
+        <script>
+            fetch("/components/header.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById("header-placeholder").innerHTML =
+                        data;
+                    document.dispatchEvent(new Event("headerLoaded"));
+                });
+        </script>
+
+        <!-- Script nạp Footer-Destinations -->
+        <script>
+            fetch("/components/footer-destinations.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById(
+                        "footer-destinations-placeholder"
+                    ).innerHTML = data;
+                });
+        </script>
+
+        <!-- Script nạp Footer-Service -->
+        <script>
+            fetch("/components/footer-service.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById(
+                        "footer-service-placeholder"
+                    ).innerHTML = data;
+                    document.dispatchEvent(new Event("footerLoaded"));
+                });
+        </script>
+
+        <!-- Script nạp Footer-Contacts -->
+        <script>
+            fetch("/components/footer-contacts.html")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.getElementById(
+                        "footer-contacts-placeholder"
+                    ).innerHTML = data;
+                });
+        </script>
+
+        <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/tourList_danang.js"></script>
+        <script src="/js/footer.js"></script>
+    </body>
+</html>

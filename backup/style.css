@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+/* .header {
+    width: auto;
+    max-height: 70px;
+} */
+
+.fiximg img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hiệu ứng hover vào thì gạch chân */
+/* .nav-link {
+    position: relative;
+    background-color: inherit !important;
+    color: black !important;
+    font-weight: 500 !important;
+}
+.nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #f9187a;
+    transition: all 0.3s ease;
+}
+.nav-link:hover:before {
+    width: 100%;
+    left: 0;
+} */
+
+/* Main Menu
+.mainmenu {
+    padding-top: 12px;
+}
+
+.mainmenu li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 50px;
+    position: relative;
+}
+
+.mainmenu li:last-child {
+    padding-right: 0;
+}
+
+.mainmenu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mainmenu li a:hover {
+    text-decoration: underline;
+} */
+
+/* Sub Menu */
+
+/* ul.submenu {
+    display: none;
+    position: absolute;
+    padding-left: 10px;
+    background-color: white;
+    width: 220px;
+    z-index: 1000;
+}
+
+ul.submenu li {
+    padding-top: 10px;
+    margin-right: 5px;
+}
+
+ul.submenu li:last-child {
+    padding-bottom: 10px;
+}
+
+ul.submenu li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+} */
+
+/* .mainmenu li:hover .submenu {
+    display: block;
+} */
+
+/* CSS cho Hỗ trợ toàn quốc */
+/* .support-nav {
+    padding-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.support-nav a {
+    text-decoration: none;
+    color: black;
+} */
+
+/* .support-box {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    width: 280px;
+    right: 20px;
+    z-index: 1000;
+} */
+/* END HEADER */
+
+/* FOOTER-DESTINATIONS*/
+.footer-destinations {
+    background: #f3f3f3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-destinations h2 {
+    font-size: 20px;
+}
+
+.catfooter {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.catfooter a {
+    text-decoration: none;
+    color: black;
+}
+
+.catfooter a:hover {
+    text-decoration: underline;
+}
+
+/* END FOOTER */
+
+/* FOOTER-SERVICE */
+.footer-service {
+    background: #f3f3f3;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-service h3 {
+    font-size: 18px;
+}
+
+.ndfooter ul {
+    font-size: 15px;
+    list-style: none;
+    line-height: 1.6;
+    padding-left: 0;
+}
+
+.ndfooter ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.ndfooter ul li a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-form {
+    max-width: 212px;
+    margin: auto;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+/* Destinations List Styling */
+.destinations-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.destinations-list li a {
+    display: block;
+    padding: 2px 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* END FOOTER-SERVICE*/
+
+/* BANNER SLIDE */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* CONTENT */
+.borderbottom::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: black;
+    margin-top: 0;
+}
+
+.nav-item:first-child {
+    background-color: red;
+    font-weight: bold;
+}
+
+.nav-item:first-child a {
+    color: white;
+}
+
+.nav-item a {
+    font-size: 20px;
+    color: black;
+}
+
+.nav-item a:hover {
+    background-color: #dd4747;
+    color: white;
+}
+
+.under-tour {
+    background-color: #f6f6f6;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-right: 12px;
+}
+
+.under-tour a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.under-tour a:hover {
+    text-decoration: underline;
+}
+
+.giakm {
+    color: #6b6b6b;
+    font-size: 16px;
+}
+
+.giatour {
+    color: #d8282a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.short-info {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ghichuhot {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    z-index: 8;
+    padding: 7px 10px;
+    background: #ce2525;
+    color: #fff;
+    font-size: 15px;
+}
