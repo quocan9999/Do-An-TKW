@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.fiximg img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hiệu ứng hover vào thì gạch chân */
+header .nav-item .nav-link {
+    position: relative;
+    background-color: inherit !important;
+    color: black !important;
+    font-weight: 500 !important;
+}
+header .nav-item .nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #f9187a;
+    transition: all 0.3s ease;
+}
+
+header .nav-item .nav-link:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/* Loại bỏ arrow icon của Bootstrap */
+.no-arrow::after {
+    display: none !important;
+}
+
+.ho-tro-toan-quoc .dropdown-menu {
+    top: 70% !important;
+    width: 200px !important;
+    padding: 20px !important;
+}
+/* END HEADER */
+
+/* FOOTER-DESTINATIONS*/
+.footer-destinations {
+    background: #f3f3f3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-destinations h2 {
+    font-size: 20px;
+}
+
+.catfooter {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.catfooter a {
+    text-decoration: none;
+    color: black;
+}
+
+.catfooter a:hover {
+    text-decoration: underline;
+}
+
+/* END FOOTER */
+
+/* FOOTER-SERVICE */
+.footer-service {
+    background: #f3f3f3;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-service h3 {
+    font-size: 18px;
+}
+
+.ndfooter ul {
+    font-size: 15px;
+    list-style: none;
+    line-height: 1.6;
+    padding-left: 0;
+}
+
+.ndfooter ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.ndfooter ul li a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-form {
+    max-width: 212px;
+    margin: auto;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+/* Destinations List Styling */
+.destinations-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.destinations-list li a {
+    display: block;
+    padding: 2px 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* END FOOTER-SERVICE*/
+
+/* BANNER SLIDE */
+/* .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+} */
+
+/* CONTENT */
+.borderbottom::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: black;
+    margin-top: 0;
+}
+
+main .nav .nav-item:first-child {
+    background-color: red;
+    font-weight: 700;
+}
+
+.nav-item:first-child a {
+    color: cornsilk;
+}
+
+.nav-item:first-child a:hover {
+    color: black;
+}
+
+.nav-item a {
+    font-size: 20px;
+    color: black;
+}
+
+.nav-item a:hover {
+    background-color: #dd4747;
+    color: white;
+}
+
+.under-tour {
+    background-color: #f6f6f6;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-right: 12px;
+}
+
+.under-tour a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.under-tour a:hover {
+    text-decoration: underline;
+}
+
+.img-tour,
+.under-tour {
+    border-radius: 10px; /* hoặc giá trị bạn muốn */
+    overflow: hidden; /* Đảm bảo ảnh không bị tràn góc */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* (tùy chọn) tạo bóng đẹp hơn */
+}
+
+.giakm {
+    color: #6b6b6b;
+    font-size: 16px;
+}
+
+.giatour {
+    color: #d8282a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.short-info {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Hiệu ứng hover vào sẽ phóng to ra */
+.card-hover-zoom {
+    transition: transform 0.3s ease;
+}
+.card-hover-zoom:hover {
+    transform: scale(1.05); /* Phóng to 5% */
+    z-index: 1;
+}
+/* END CONTENT */
+
+/* FOOTER CONTACTS */
+
+.footer-contacts {
+    background: #f3f3f3;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0.8px;
+}
+
+.logofix img {
+    width: 200px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* END FOOTER CONTACT */
+
+/* Contact Menu */
+.icon-contact {
+    position: fixed;
+    top: 45%;
+    left: 4px;
+    z-index: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-contact {
+    position: fixed;
+    top: -100%;
+    left: 30%;
+    z-index: 1002;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.form-contact.show {
+    top: 30%;
+    opacity: 1;
+    visibility: visible;
+}

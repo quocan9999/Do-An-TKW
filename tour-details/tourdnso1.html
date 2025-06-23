@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Tour Miền Trung 4N3Đ: Từ Hà Nội - Đà Nẵng - Sơn Trà - Bà Nà - Phố cổ
+            Hội An, Bay VNA + KS 4*
+        </title>
+        <link rel="stylesheet" href="../css/style_TanDat.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="../libs/bootstrap-icons/bootstrap-icons.min.css"
+        />
+    </head>
+    <body>
+        <!-- Vị trí header -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="navbar-brand" style="margin-left: 20px">
+                        <a href="../index.html">
+                            <img src="../assets/img/logo2.png" alt="Logo" />
+                        </a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="justify-content-around collapse navbar-collapse"
+                        id="navbarNav"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item" style="margin-right: 10px">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="../index.html"
+                                    >Trang Chủ
+                                </a>
+                            </li>
+                            <li
+                                class="nav-item dropdown"
+                                style="margin-right: 10px"
+                            >
+                                <a
+                                    class="nav-link dropdown-toggle no-arrow"
+                                    href="#"
+                                    id="tourDuLich"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Tour du lịch
+                                </a>
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="tourDuLich"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2hanoi.html"
+                                            >Hà Nội</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2halong.html"
+                                            >Hạ Long</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2danang.html"
+                                            >Đà Nẵng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2combo.html"
+                                            >Tour Combo</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="nav-item dropdown"
+                                style="margin-right: 10px"
+                            >
+                                <a
+                                    class="nav-link dropdown-toggle no-arrow"
+                                    href="#"
+                                    id="gioiThieuDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Giới thiệu</a
+                                >
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="gioiThieuDropdown"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-about/GioiThieuVeChungToi.html"
+                                            >Về chúng tôi</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Sự kiện nổi bật</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-about/HuongDanThanhToan.html"
+                                            >Hướng dẫn thanh toán</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Chính sách bảo mật thông tin</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="navbar dropdown ho-tro-toan-quoc">
+                            <p
+                                class="nav-link dropdown-toggle"
+                                id="hoTro"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Hỗ trợ toàn quốc <i class="bi bi-telephone"></i>
+                            </p>
+                            <div class="dropdown-menu" aria-labelledby="hoTro">
+                                <p>
+                                    Chi Nhánh Hà Nội:
+                                    <span style="color: red; font-weight: bold"
+                                        >0918 205 665</span
+                                    >
+                                </p>
+                                <p>
+                                    Chi Nhánh HCM:
+                                    <span style="color: red; font-weight: bold"
+                                        >0934 477 296</span
+                                    >
+                                </p>
+                                <p>
+                                    Chi Nhánh Đà Nẵng:
+                                    <span style="color: red; font-weight: bold"
+                                        >0938 241 828</span
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="tour-content">
+            <div class="container">
+                <div class="left">
+                    <h1>
+                        Tour Miền Trung 4N3Đ: Từ Hà Nội - Đà Nẵng - Sơn Trà - Bà
+                        Nà - Phố cổ Hội An, Bay VNA + KS 4*
+                    </h1>
+                    <img
+                        src="../assets/img_TanDat/DaNang/DaNang1/thumb_danang_1_main.jpg"
+                        alt="Tour Đà Nẵng"
+                        class="main-image"
+                    />
+
+                    <div class="thumbs">
+                        <img
+                            src="../assets/img_TanDat/DaNang/DaNang1/thumb_danang_1_1.png"
+                            alt="thumb"
+                            onmouseover="zoomIn(this)"
+                            onmouseout="zoomOut(this)"
+                        />
+                        <img
+                            src="../assets/img_TanDat/DaNang/DaNang1/thumb_danang_1_2.jpg"
+                            alt="thumb"
+                            onmouseover="zoomIn(this)"
+                            onmouseout="zoomOut(this)"
+                        />
+                        <img
+                            src="../assets/img_TanDat/DaNang/DaNang1/thumb_danang_1_3.jpg"
+                            alt="thumb"
+                            onmouseover="zoomIn(this)"
+                            onmouseout="zoomOut(this)"
+                        />
+                        <img
+                            src="../assets/img_TanDat/DaNang/DaNang1/thumb_danang_1_4.jpg"
+                            alt="thumb"
+                            onmouseover="zoomIn(this)"
+                            onmouseout="zoomOut(this)"
+                        />
+                    </div>
+
+                    <div class="tabs">
+                        <div class="tab">Giới thiệu điểm đến</div>
+                        <div class="tab">Lịch trình</div>
+                        <div class="tab">Bảng giá</div>
+                        <div class="tab">Hướng dẫn đặt tour</div>
+                        <div class="tab">Chi tiết dịch vụ</div>
+                        <div class="tab">Đánh giá</div>
+                    </div>
+
+                    <h2>GIỚI THIỆU ĐIỂM ĐẾN</h2>
+                    <p>
+                        Hành trình đưa du khách khám phá thành phố du lịch Đà
+                        Nẵng là một điểm dừng chân lý tưởng, du khách có thể
+                        thưởng thức những giây phút tuyệt vời trên đỉnh núi,
+                        trong rừng sâu hay bên bờ sông, bờ biển; cũng có thể
+                        hưởng thụ những dịch vụ với chất lượng quốc tế khi nghỉ
+                        ngơi tại các khu du lịch của thành phố.
+                    </p>
+                    <p>
+                        Nằm bên dòng sông Hàn, phía Đông vươn ra biển Đông với
+                        những bãi biển dài tăm tắp và bán đảo Sơn Trà còn rất
+                        hoang sơ; phía Bắc và phía Tây được bao bọc bởi đèo núi
+                        cao, Đèo Hải Vân cheo leo hiểm trở là ranh giới tự nhiên
+                        giữa thành phố và tỉnh Thừa Thiên Huế…
+                    </p>
+                    <p>
+                        Nhắc tới du lịch Đà Nẵng là nhắc tới một thành phố biển
+                        với bãi biển dài hơn 60 km. Với bãi biển đẹp, trải dài
+                        thoai thoải và cát trắng miên man, biển Đà Nẵng được tạp
+                        chí Forbes của Mỹ bình chọn là 1 trong 6 bãi biển quyến
+                        rũ nhất hành tinh.
+                    </p>
+                    <p>
+                        Chuyến hành trình đưa du khách tham quan đô thị cổ Hội
+                        An. Ngay từ giây phút bước chân vào lãnh thổ Hội An,
+                        khách du lịch Hội An sẽ có cảm giác quay trở lại thời xa
+                        xưa, nơi mà không có bóng dáng của cuộc sống hiện đại.
+                        Cái không khí yên ả của Hội An khiến du khách có cảm
+                        giác thanh thản nhẹ nhàng đến lạ kì…
+                    </p>
+                    <p>
+                        Đến nay, khu phố cổ Hội An vẫn bảo tồn gần như nguyên
+                        trạng một quần thể di tích kiến trúc cổ gồm nhiều công
+                        trình nhà ở, hội quán, đình chùa, miếu, giếng cầu, nhà
+                        thờ tộc, bến cảng, chợ… và những con đường phố hẹp chạy
+                        ngang dọc tạo thành các ô vuông kiểu bàn cờ.
+                    </p>
+                    <p>
+                        Một trong những vấn đề quan tâm của du khách khi đi tour
+                        du lịch miền Trung chính là khách sạn ở đây ra sao? Du
+                        khách sẽ được nghỉ tại một trong những khách sạn tọa lạc
+                        ngay tại khu du lịch biển Mỹ Khê - bãi biển đẹp của Đà
+                        Nẵng. Khách sạn đầy đủ tiện nghi, sang trọng cùng với
+                        đội ngũ nhân viên tận tính chu đáo chắc chắn sẽ làm cho
+                        quý khách cảm thấy thoái mái và ấm cúng như chính ngôi
+                        nhà của bạn.
+                    </p>
+                    <h2>BẢNG GIÁ TOUR</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Đối tượng</th>
+                                <th>Giá Tour</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Người lớn từ đủ 10 tuổi trở lên</td>
+                                <td>6,950,000đ</td>
+                            </tr>
+                            <tr>
+                                <td>Trẻ em (5 - 10 tuổi)</td>
+                                <td>4,750,000đ</td>
+                            </tr>
+                            <tr>
+                                <td>Trẻ nhỏ (2 - 5 tuổi)</td>
+                                <td>2,890,000</td>
+                            </tr>
+                            <tr>
+                                <td>Trẻ em dưới 2</td>
+                                500,000đ
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>HƯỚNG DẪN ĐẶT TOUR</h2>
+                    <ol>
+                        <li>
+                            <strong>B1 Chọn điểm khởi hành:</strong>Chọn điểm
+                            khởi hành phù hợp với quý khách, khách hàng ở Hà Nội
+                            hay tỉnh thành miền Bắc (Hải Phòng, Hạ Long, Hải
+                            Dương, Ninh Bình, Thanh Hoá…) thường tham gia tour
+                            khởi hành từ sân bay Nội Bài, khách hàng ở Tp HCM
+                            hay tỉnh thành miền Nam (Vũng Tàu, Đồng Nai, Cần
+                            Thơ, lục tỉnh miền Tây…) tham gia tour từ sân bay
+                            Tân Sơn Nhất, khách hàng ở Đà Nẵng hay tỉnh thành
+                            miền Trung (Huế, Quảng Trị, Quảng Nam...) đi tour từ
+                            sân bay Đà Nẵng/ Huế… Quý khách ở tỉnh thành chủ
+                            động di chuyển đến sân bay hoặc nhóm trên 10 khách
+                            sẽ có xe của công ty đưa đón. Liên hệ VPDD, VPUQ của
+                            chúng tôi tại mỗi tỉnh thành để thông tin rõ hơn
+                            (Xem văn phòng trên cả nước …)
+                        </li>
+                        <li>
+                            <strong>B2 Chọn tour phù hợp:</strong> Chọn tour phù
+                            hợp với nhu cầu, liên hệ nhân viên tư vấn để hỏi rõ
+                            hơn thông tin và thống nhất chương trình, ngày khởi
+                            hành, giá tour, chương trình khuyến mãi (nếu có)…
+                        </li>
+                        <li>
+                            <strong>B3 Ký hợp đồng:</strong> Thống nhất lại
+                            chương trình tour chuẩn, ký hợp đồng/ hoặc phiếu
+                            đăng ký tour có đóng dấu tròn đỏ của công ty Lữ Hành
+                            Việt Nam, đặt cọc tour và nhận phiếu thu. Thanh toán
+                            theo lộ trình
+                        </li>
+                        <li>
+                            <strong>B4 Đi tour:</strong> Trải nghiệm dịch vụ,
+                            nhận ưu đãi sau tour.
+                        </li>
+                    </ol>
+
+                    <h2>GIÁ TOUR BAO GỒM</h2>
+                    <ul>
+                        <li>
+                            Xe đưa đón đời mới, điều hoà, lái xe chuyên nghiệp.
+                        </li>
+                        <li>
+                            Vé máy bay khứ hồi: Hà Nội - Đà Nẵng - Hà Nội ( vé
+                            đoàn Vietnam Airlines, bao gồm 23kg hành lý ký gửi +
+                            10kg hành lý xách tay).
+                        </li>
+                        <li>Xe điện trung chuyển vào Phố cổ Hội An.</li>
+                        <li>
+                            Bữa ăn theo lịch trình: 05 - 06 bữa tiêu chuẩn
+                            160.000VNĐ/người tùy theo ngày khởi hành, 03 bữa
+                            sáng tại khách sạn.
+                        </li>
+                        <li>Hướng dẫn viên nhiệt tình, giàu kinh nghiệm.</li>
+                        <li>
+                            Nước uống (01 chai/ngày) phục vụ trên xe theo trong
+                            suốt hành trình thăm quan.
+                        </li>
+                        <li>Bảo hiểm du lịch trọn tour.</li>
+                        <li>
+                            Hướng dẫn viên nhiệt tình, kinh nghiệm đón tiễn, làm
+                            thủ tục tại sân bay Nội Bài
+                        </li>
+                        <li>
+                            Hướng dẫn viên nhiệt tình, kinh nghiệm theo suốt
+                            hành trình tại Đà Nẵng.
+                        </li>
+                        <li>
+                            Vé tham quan thắng cảnh tại tất cả các điểm thăm
+                            quan trong chương trình.
+                        </li>
+                        <li>Mũ du lịch.</li>
+                        <li>
+                            Bảo hiểm du lịch, mức đền bù tối đa
+                            120.000.000đ/người/vụ.
+                        </li>
+                    </ul>
+
+                    <h2>GIÁ TOUR KHÔNG BAO GỒM</h2>
+                    <ul>
+                        <li>Chi phí cá nhân: đồ uống, quà lưu niệm…</li>
+                        <li>Thuế VAT (nếu yêu cầu hóa đơn).</li>
+                        <li>
+                            Tiền tip cho hướng dẫn, lái xe (không bắt buộc).
+                        </li>
+                        <li>
+                            Option Mikazuki theo giá công bố 650.000VNĐ/khách.
+                        </li>
+                        <li>
+                            Option Bà Nà theo giá công bố của Sun World:
+                            1.250.000VNĐ/khách
+                        </li>
+                    </ul>
+
+                    <h2>CHÍNH SÁCH TRẺ EM</h2>
+                    <ul>
+                        <li>
+                            Trẻ em dưới 5 tuổi (và dưới 1m2) miễn giá tour. Cha,
+                            Mẹ hoặc người thân đi kèm tự lo các chi phí ăn, ngủ,
+                            tham quan (nếu có) cho bé. Hai người lớn được kèm 01
+                            trẻ em dưới 5 tuổi, trẻ em thứ 2 trở lên tính 100%
+                            phí dịch vụ .
+                        </li>
+                        <li>Trẻ từ 5 đến 10 tuổi: tính 75% giá tour.</li>
+                        <li>Trẻ trên 10 tuổi: tính như người lớn.</li>
+                    </ul>
+
+                    <h2>ĐIỀU KIỆN HUỶ TOUR</h2>
+                    <ul>
+                        <li>
+                            Dưới đây là mức phạt hủy tour theo quy định của Công
+                            ty. Chúng tôi sẽ linh động giải quyết từng trường
+                            hợp cụ thể trong khả năng cho phép.
+                        </li>
+                        <li>Huỷ trước 5 ngày: hoàn 100% tiền tour.</li>
+                        <li>Huỷ trước 3 ngày: mất 50% tiền tour.</li>
+                        <li>Huỷ sau 1 ngày: mất 100% tiền tour.</li>
+                    </ul>
+                    <h2>CÁC QUY ĐỊNH CHUNG</h2>
+                    <ul>
+                        <li>
+                            • Nếu bên A hủy tour do bị từ chối làm thủ tục tại
+                            sân bay do nhân thân / giấy tờ tùy thân Công ty
+                            chúng tôi không chịu trách nhiệm cho sự việc trên.
+                            Các chi phí cho chương trình sẽ không được chúng tôi
+                            hoàn lại trong trường hợp này.
+                        </li>
+                        <li>
+                            • Do tính chất đoàn ghép khách lẻ, nếu đoàn có từ 10
+                            người lớn trở lên, đoàn sẽ khởi hành đúng ngày. Nếu
+                            đoàn không đủ 10 khách, bên B sẽ sắp xếp ngày khởi
+                            hành mới và thông báo cho bên A biết trước 15 ngày
+                            làm việc. Trường hợp bên A không đi theo lịch khởi
+                            hành mới được, bên B sẽ hoàn lại tiền cọc cho bên A.
+                        </li>
+                        <li>
+                            • Nếu Bên B không tổ chức cho đoàn đi đúng thời gian
+                            dự kiến do các nguyên nhân bất khả kháng như: Thiên
+                            tai, bão lụt, chiến tranh…. Bên B sẽ thu xếp ngày
+                            khởi hành mới, mọi chi phí phát sinh do hai bên thỏa
+                            thuận
+                        </li>
+                        <li>
+                            Chân thành cảm ơn Quý khách. Kính chúc Quý khách
+                            chuyến tham quan vui vẻ, ý nghĩa!
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <div class="info">
+                        <p>
+                            <strong>Mã tour:</strong>
+                            <span class="highlight">ID4170</span>
+                        </p>
+                        <p><strong>Khởi hành:</strong> Hà Nội</p>
+                        <p><strong>Điểm đến:</strong> Việt Nam</p>
+                        <p><strong>Thời gian:</strong> 4 ngày 3 đêm</p>
+                        <p>
+                            <strong>Ngày đi:</strong> 05, 12, 26/06; 08, 28/07;
+                            20, 25/8; 21/09/2025
+                        </p>
+                        <p><strong>Phương tiện:</strong> 🚌</p>
+                        <p class="price">6,550,000đ</p>
+                        <p style="text-decoration: line-through">8,090,000đ</p>
+                        <p>
+                            <strong>Tổng đài:</strong>
+                            <span class="highlight">0814 741 313</span>
+                        </p>
+                    </div>
+
+                    <h3>ĐIỂM NỔI BẬT</h3>
+                    <ul>
+                        <li>Chắc chắn khởi hành</li>
+                        <li>Giá tour cực hấp dẫn</li>
+                        <li>Lịch trình linh hoạt</li>
+                    </ul>
+
+                    <form>
+                        <label>Khởi hành</label>
+                        <input type="date" required />
+                        <label>Số khách</label>
+                        <input type="number" min="1" value="1" required />
+                        <label>Họ & tên</label>
+                        <input type="text" required />
+                        <label>Điện thoại</label>
+                        <input type="tel" required />
+                        <button id="datTourButton" type="submit">
+                            🛒 ĐẶT TOUR
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Icon Contact -->
+        <div id="iconContact" class="icon-contact">
+            <img src="../assets/icon/icon_contact.png" alt="Icon Contact" />
+        </div>
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+        <!-- Form Contact -->
+        <div id="formContact" class="form-contact">
+            <div class="card text-center pb-2 pt-2" style="width: 25rem">
+                <div class="card-title">
+                    <h5>Để lại lời nhắn cho chúng tôi</h5>
+                </div>
+                <div class="card-text">
+                    <input
+                        type="tel"
+                        placeholder="Số điện thoại của bạn"
+                        class="form-control p-1 w-75 mx-auto"
+                    />
+                    <select
+                        name="Khởi hành"
+                        id="khoiHanh"
+                        class="form-select w-75 mx-auto mt-3"
+                    >
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hạ Long">Hạ Long</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Tour Combo">Tour Combo</option>
+                    </select>
+                    <textarea
+                        placeholder="Nhập địa điểm tour cần tư vấn"
+                        class="form-control p-1 w-75 mx-auto mt-3 mb-3"
+                        rows="3"
+                    ></textarea>
+                    <button id="sendContactButton" class="btn btn-primary mb-2">
+                        GỬI ĐI
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vị trí Footer-Destinations -->
+        <footer class="footer-destinations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>DU LỊCH VIỆT NAM</h2>
+                        <div class="catfooter">
+                            <ul
+                                class="destinations-list row text-start list-unstyled"
+                            >
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2hanoi.html"
+                                        >Hà Nội</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2danang.html"
+                                        >Đà Nẵng</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2halong.html"
+                                        >Hạ Long</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2combo.html"
+                                        >Tour Combo</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Vũng Tàu</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Phú Quốc</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Quảng Bình</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Hà Giang</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Phú Yên</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Biển Hải Hòa</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Cát Bà</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Phú Quốc</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Vị trí Footer-Service -->
+        <footer class="footer-service" style="border-top: 1px solid white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                        <div class="ndfooter">
+                            <div style="text-align: center">
+                                <div style="text-align: left">
+                                    <ul>
+                                        <li>
+                                            <strong
+                                                >Giờ làm việc (GMT+7)</strong
+                                            >
+                                        </li>
+                                        <li>Thứ 2 - Thứ 6: từ 8h30 - 18h00</li>
+                                        <li>Thứ 7: từ 8h30 - 12h00</li>
+                                        <li>Chủ nhật và lễ nghỉ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h3>THÔNG TIN CẦN BIẾT</h3>
+                        <div class="ndfooter">
+                            <div style="text-align: center">
+                                <div style="text-align: left">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Hướng dẫn đặt tour</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="../tour-about/HuongDanThanhToan.html"
+                                                >Hướng dẫn thanh toán</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="../tour-about/GioiThieuVeChungToi.html"
+                                                >Về chúng tôi</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#">Chính sách bảo mật</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h3>DỊCH VỤ</h3>
+                        <div class="ndfooter">
+                            <div style="text-align: center">
+                                <div style="text-align: left">
+                                    <ul>
+                                        <li>Tin tức du lịch</li>
+                                        <li>Vé máy bay</li>
+                                        <li>Khách sạn</li>
+                                        <li>Thuê xe</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h3>DU LỊCH THÔNG MINH</h3>
+                        <p>
+                            Đăng ký nhận tin để lên kế hoạch cho kỳ nghỉ sắp tới
+                            ngay từ bây giờ
+                        </p>
+                        <!-- Form nhận khuyến mãi -->
+                        <div class="card p-4 text-center subscribe-form">
+                            <h3>Đăng ký</h3>
+                            <p class="mb-4 text-muted">Nhận tour khuyến mãi</p>
+
+                            <form>
+                                <div class="mb-3">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="Nhập Email*"
+                                        required
+                                        id="email"
+                                    />
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary w-100 mt-3"
+                                        id="emailBtn"
+                                    >
+                                        Gửi đi
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Vị trí Footer-Contacts -->
+        <footer class="footer-contacts">
+            <div class="container">
+                <div class="row gx-5 gy-4">
+                    <div class="col-md-3">
+                        <h3 style="font-size: 20px">
+                            TOUR DU LỊCH VIỆT NAM là website trực thuộc CÔNG TY
+                            CỔ PHẦN LỮ HÀNH VIỆT - DU LỊCH VIỆT NAM
+                        </h3>
+                        <p><strong>Người đại diện: (Ông) Lê Đại Nam</strong></p>
+                        <p><strong>Mã số thuế: </strong>0106699839</p>
+                        <p>
+                            <strong>VP Hà Nội: </strong>93 Hồng Hà, Ba Đình, Hà
+                            Nội
+                        </p>
+                        <p style="margin-inline-start: 5.5rem">
+                            126 Trần Vĩ, Mai Dịch, Cầu Giấy, Hà Nội
+                        </p>
+                        <p>
+                            <strong>VP TP.HCM: </strong>9 Phan Kế Bính, Phường
+                            Đakao, Quận 1
+                        </p>
+                        <p style="margin-inline-start: 5.5rem">
+                            55 Bis Nguyễn Văn Thủ, Phường Đakao, Quận 1
+                        </p>
+                        <p>
+                            <strong>VP Đà Nẵng: </strong>76 -78 Bạch Đằng, P.
+                            Hải Châu, Quận Hải Châu
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="font-size: 20px">LIÊN HỆ</h3>
+                        <p>
+                            <strong>- Tel (Tour Nội Địa từ HN): </strong>0814
+                            741 313
+                        </p>
+                        <p>
+                            <strong>- Tel (Tour Nước Ngoài từ HN): </strong>0936
+                            206 998
+                        </p>
+                        <p>
+                            <strong>- Tel (Tour Nội Địa từ HCM): </strong>0904
+                            555 908
+                        </p>
+                        <p>
+                            <strong>- Tel (Tour nước ngoài từ HCM): </strong
+                            >0936 108 809
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="font-size: 20px">TẢI APP</h3>
+                        <a href="#" class="logofix">
+                            <img
+                                src="../assets/img/download_on_googleplay.png"
+                                alt="Download_On_GooglePlay"
+                            />
+                        </a>
+                        <a href="#" class="logofix">
+                            <img
+                                src="../assets/img/download_on_appstore.png"
+                                alt="Download_On_AppStore"
+                            />
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="../assets/img/logo2.png" alt="Logo" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/footer.js"></script>
+        <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

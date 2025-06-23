@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../libs/bootstrap-icons/bootstrap-icons.min.css">
+
+        <title>Hướng Dẫn Thanh Toán</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #fafafa;
+            }
+            h1 {
+                text-align: center;
+                color: #cc1f1f;
+                margin-bottom: 50px;
+            }
+            .section {
+                background-color: #fff;
+                padding: 20px 30px;
+                border-left: 4px solid #cc1f1f;
+                border-radius: 5px;
+                margin: 0 auto 30px;
+                max-width: 960px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            }
+            .section h2 {
+                color: #3419ad;
+                margin-bottom: 10px;
+            }
+            .section ul {
+                padding-left: 20px;
+            }
+            .bank-info {
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid #ccc;
+            }
+            .logos img {
+                height: 50px;
+                margin-right: 8px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Vị trí header -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="navbar-brand" style="margin-left: 20px">
+                        <a href="../index.html">
+                            <img src="../assets/img/logo2.png" alt="Logo" />
+                        </a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="justify-content-around collapse navbar-collapse"
+                        id="navbarNav"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item" style="margin-right: 10px">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="../index.html"
+                                    >Trang Chủ
+                                </a>
+                            </li>
+                            <li
+                                class="nav-item dropdown"
+                                style="margin-right: 10px"
+                            >
+                                <a
+                                    class="nav-link dropdown-toggle no-arrow"
+                                    href="#"
+                                    id="tourDuLich"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Tour du lịch
+                                </a>
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="tourDuLich"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2hanoi.html"
+                                            >Hà Nội</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2halong.html"
+                                            >Hạ Long</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2danang.html"
+                                            >Đà Nẵng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-rowtour/rowtour_2combo.html"
+                                            >Tour Combo</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="nav-item dropdown"
+                                style="margin-right: 10px"
+                            >
+                                <a
+                                    class="nav-link dropdown-toggle no-arrow"
+                                    href="#"
+                                    id="gioiThieuDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Giới thiệu</a
+                                >
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="gioiThieuDropdown"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-about/GioiThieuVeChungToi.html"
+                                            >Về chúng tôi</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Sự kiện nổi bật</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="../tour-about/HuongDanThanhToan.html"
+                                            >Hướng dẫn thanh toán</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Chính sách bảo mật thông tin</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="navbar dropdown ho-tro-toan-quoc">
+                            <p
+                                class="nav-link dropdown-toggle"
+                                id="hoTro"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Hỗ trợ toàn quốc <i class="bi bi-telephone"></i>
+                            </p>
+                            <div class="dropdown-menu" aria-labelledby="hoTro">
+                                <p>
+                                    Chi Nhánh Hà Nội:
+                                    <span style="color: red; font-weight: bold"
+                                        >0918 205 665</span
+                                    >
+                                </p>
+                                <p>
+                                    Chi Nhánh HCM:
+                                    <span style="color: red; font-weight: bold"
+                                        >0934 477 296</span
+                                    >
+                                </p>
+                                <p>
+                                    Chi Nhánh Đà Nẵng:
+                                    <span style="color: red; font-weight: bold"
+                                        >0938 241 828</span
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="mt-3">Hướng Dẫn Thanh Toán</h1>
+
+        <div class="section">
+            <h2>Thanh toán tại địa chỉ khách hàng</h2>
+            <p>
+                Trong thời gian từ thứ 2–7 (ngày làm việc), nhân viên công ty sẽ
+                đến tận nơi địa chỉ của quý khách để giao phiếu thu hoặc xác
+                nhận của công ty và thu tiền khi quý khách yêu cầu đặt dịch vụ.
+            </p>
+            <ul>
+                <li>Miễn phí đối với booking &gt; 5 triệu</li>
+                <li>Phụ thu 50.000đ với booking &lt; 5 triệu</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Thanh toán tại văn phòng</h2>
+            <p><strong>Văn phòng tại TTP.HCM:</strong></p>
+            <ul>
+                <li>
+                    Địa chỉ: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TP.Hồ Chí
+                    Minh
+                </li>
+                <li>Điện thoại: (+8424) 3717 1818 – 3716 6556</li>
+            </ul>
+            <p><strong>Văn phòng tại Hà Nội :</strong></p>
+            <ul>
+                <li>Địa chỉ: 93 Hồng Hà, Ba Đình, Hà Nội</li>
+                <li>Điện thoại: (028) 62955333 – 62977333</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Thanh toán qua chuyển khoản</h2>
+            <p>
+                Quý khách có thể thanh toán cho chúng tôi bằng cách chuyển khoản
+                tại ngân hàng, qua thẻ ATM, hoặc Internet Banking:
+            </p>
+
+            <div class="bank-info">
+                <strong>Tên TK:</strong> Công Ty Cổ Phần Lữ Hành Việt – Du Lịch
+                Việt<br />
+                <strong>Số TK:</strong> 03601013004581<br />
+                <strong>Ngân hàng:</strong> TMCP Hàng Hải Việt Nam <br />
+            </div>
+
+            <div class="bank-info">
+                <strong>Tên TK:</strong> Công Ty Cổ Phần Đầu Tư – Vận Tải – Du
+                Lịch Hoàng Việt<br />
+                <strong>Số TK:</strong> 60681368<br />
+                <strong>Ngân hàng:</strong> VPBank<br />
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Thanh toán bằng thẻ Visa, MasterCard</h2>
+            <p>Chúng tôi chấp nhận các loại thẻ:</p>
+            <div class="logos">
+                <img src="../assets/PhuongThao/the.png" />
+            </div>
+        </div>
+        <!-- Icon Contact -->
+        <div id="iconContact" class="icon-contact">
+            <img src="../assets/icon/icon_contact.png" alt="Icon Contact" />
+        </div>
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+        <!-- Form Contact -->
+        <div id="formContact" class="form-contact">
+            <div class="card text-center pb-2 pt-2" style="width: 25rem">
+                <div class="card-title">
+                    <h5>Để lại lời nhắn cho chúng tôi</h5>
+                </div>
+                <div class="card-text">
+                    <input
+                        type="tel"
+                        placeholder="Số điện thoại của bạn"
+                        class="form-control p-1 w-75 mx-auto"
+                    />
+                    <select
+                        name="Khởi hành"
+                        id="khoiHanh"
+                        class="form-select w-75 mx-auto mt-3"
+                    >
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hạ Long">Hạ Long</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Tour Combo">Tour Combo</option>
+                    </select>
+                    <textarea
+                        placeholder="Nhập địa điểm tour cần tư vấn"
+                        class="form-control p-1 w-75 mx-auto mt-3 mb-3"
+                        rows="3"
+                    ></textarea>
+                    <button id="sendContactButton" class="btn btn-primary mb-2">
+                        GỬI ĐI
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Vị trí Footer-Destinations -->
+        <footer class="footer-destinations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>DU LỊCH VIỆT NAM</h2>
+                        <div class="catfooter">
+                            <ul
+                                class="destinations-list row text-start list-unstyled"
+                            >
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2hanoi.html"
+                                        >Hà Nội</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2danang.html"
+                                        >Đà Nẵng</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2halong.html"
+                                        >Hạ Long</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a
+                                        href="../tour-rowtour/rowtour_2combo.html"
+                                        >Tour Combo</a
+                                    >
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Vũng Tàu</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Phú Quốc</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Quảng Bình</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Hà Giang</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Phú Yên</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Biển Hải Hòa</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Cát Bà</a>
+                                </li>
+                                <li class="col-3">
+                                    <a href="">Phú Quốc</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Vị trí Footer-Service -->
+        <footer class="footer-service" style="border-top: 1px solid white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                        <div class="ndfooter">
+                            <div style="text-align: center">
+                                <div style="text-align: left">
+                                    <ul>
+                                        <li>
+                                            <strong
+                                                >Giờ làm việc (GMT+7)</strong
+                                            >
+                                        </li>
+                                        <li>Thứ 2 - Thứ 6: từ 8h30 - 18h00</li>
+                                        <li>Thứ 7: từ 8h30 - 12h00</li>
+                                        <li>Chủ nhật và lễ nghỉ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h3>THÔNG TIN CẦN BIẾT</h3>
+                        <div class="ndfooter">
+                            <div style="text-align: center">
+                                <div style="text-align: left">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Hướng dẫn đặt tour</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="../tour-about/HuongDanThanhToan.html"
+                                                >Hướng dẫn thanh toán</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="../tour-about/GioiThieuVeChungToi.html"
+                                                >Về chúng tôi</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#">Chính sách bảo mật</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h3>DỊCH VỤ</h3>
+                        <div class="ndfooter">
+                            <div style="text-align: center">
+                                <div style="text-align: left">
+                                    <ul>
+                                        <li>Tin tức du lịch</li>
+                                        <li>Vé máy bay</li>
+                                        <li>Khách sạn</li>
+                                        <li>Thuê xe</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h3>DU LỊCH THÔNG MINH</h3>
+                        <p>
+                            Đăng ký nhận tin để lên kế hoạch cho kỳ nghỉ sắp tới
+                            ngay từ bây giờ
+                        </p>
+                        <!-- Form nhận khuyến mãi -->
+                        <div class="card p-4 text-center subscribe-form">
+                            <h3>Đăng ký</h3>
+                            <p class="mb-4 text-muted">Nhận tour khuyến mãi</p>
+
+                            <form>
+                                <div class="mb-3">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="Nhập Email*"
+                                        required
+                                        id="email"
+                                    />
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary w-100 mt-3"
+                                        id="emailBtn"
+                                    >
+                                        Gửi đi
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Vị trí Footer-Contacts -->
+        <footer class="footer-contacts">
+            <div class="container">
+                <div class="row gx-5 gy-4">
+                    <div class="col-md-3">
+                        <h3 style="font-size: 20px">
+                            TOUR DU LỊCH VIỆT NAM là website trực thuộc CÔNG TY
+                            CỔ PHẦN LỮ HÀNH VIỆT - DU LỊCH VIỆT NAM
+                        </h3>
+                        <p><strong>Người đại diện: (Ông) Lê Đại Nam</strong></p>
+                        <p><strong>Mã số thuế: </strong>0106699839</p>
+                        <p>
+                            <strong>VP Hà Nội: </strong>93 Hồng Hà, Ba Đình, Hà
+                            Nội
+                        </p>
+                        <p style="margin-inline-start: 5.5rem">
+                            126 Trần Vĩ, Mai Dịch, Cầu Giấy, Hà Nội
+                        </p>
+                        <p>
+                            <strong>VP TP.HCM: </strong>9 Phan Kế Bính, Phường
+                            Đakao, Quận 1
+                        </p>
+                        <p style="margin-inline-start: 5.5rem">
+                            55 Bis Nguyễn Văn Thủ, Phường Đakao, Quận 1
+                        </p>
+                        <p>
+                            <strong>VP Đà Nẵng: </strong>76 -78 Bạch Đằng, P.
+                            Hải Châu, Quận Hải Châu
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="font-size: 20px">LIÊN HỆ</h3>
+                        <p>
+                            <strong>- Tel (Tour Nội Địa từ HN): </strong>0814
+                            741 313
+                        </p>
+                        <p>
+                            <strong>- Tel (Tour Nước Ngoài từ HN): </strong>0936
+                            206 998
+                        </p>
+                        <p>
+                            <strong>- Tel (Tour Nội Địa từ HCM): </strong>0904
+                            555 908
+                        </p>
+                        <p>
+                            <strong>- Tel (Tour nước ngoài từ HCM): </strong
+                            >0936 108 809
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 style="font-size: 20px">TẢI APP</h3>
+                        <a href="#" class="logofix">
+                            <img
+                                src="../assets/img/download_on_googleplay.png"
+                                alt="Download_On_GooglePlay"
+                            />
+                        </a>
+                        <a href="#" class="logofix">
+                            <img
+                                src="../assets/img/download_on_appstore.png"
+                                alt="Download_On_AppStore"
+                            />
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="../assets/img/logo2.png" alt="Logo" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/footer.js"></script>
+        <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
